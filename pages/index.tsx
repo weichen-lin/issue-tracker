@@ -1,13 +1,10 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
-
 export default function Home() {
+  console.log(process.env.github_oauth_clientID)
+  console.log(process.env.github_oauth_clientSecret)
+
   return (
     <>
-      <div className='bg-red-300 text-2xl'>123123123</div>
+      <div className='bg-red-300 text-2xl'>INDEX PAGE</div>
     </>
   )
 }
