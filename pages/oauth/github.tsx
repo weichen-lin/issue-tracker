@@ -2,7 +2,6 @@ import { get_github_token, auth_github } from '@/pages/api'
 import { GetServerSideProps } from 'next'
 import Router from 'next/router'
 import { useEffect } from 'react'
-//http://127.0.0.1:3000/oauth/github?code=43e0d82f403dde967101
 
 interface GithubProps {
   githubToken: string
