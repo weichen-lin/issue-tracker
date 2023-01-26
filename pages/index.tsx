@@ -1,10 +1,13 @@
-export default function Home() {
-  console.log(process.env.github_oauth_clientID)
-  console.log(process.env.github_oauth_clientSecret)
-
+export default function IndexPage() {
   return (
-    <>
-      <div className='bg-red-300 text-2xl'>INDEX PAGE</div>
-    </>
+    <div className='relative h-screen w-1/2 mx-auto overflow-hidden bg-slate-100 to_3D'>
+      <div className='w-1/2 h-32 mx-auto my-10'>
+        <img
+          src='static/logo.png'
+          draggable={false}
+          className='h-full mx-auto'
+        ></img>
+      </div>
+    </div>
   )
 }
