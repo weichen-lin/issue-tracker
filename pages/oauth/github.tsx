@@ -13,9 +13,10 @@ export default function Github(props: GithubProps) {
   useEffect(() => {
     if (!githubToken) {
       Router.push('/')
+    } else {
+      sessionStorage.setItem('_issueTracker_', githubToken)
+      Router.push('/repo')
     }
-    sessionStorage.setItem('_issueTracker_', githubToken)
-    Router.push('/repo')
   }, [])
 
   return (
@@ -34,14 +35,14 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 
     return {
       props: {
-        githubToken: githubToken,
-      },
+        githubToken: githubToken
+      }
     }
   }
 
   return {
     props: {
-      githubToken: '',
-    },
+      githubToken: ''
+    }
   }
 }
