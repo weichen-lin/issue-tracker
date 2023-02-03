@@ -1,5 +1,5 @@
 import clsx from 'clsx'
-import { IssueIcon } from '@/components/utils'
+import { IssueIcon } from '@/components/utils/icons'
 interface CarUpperProps {
   carName: string
 }
