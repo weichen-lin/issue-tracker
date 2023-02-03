@@ -12,7 +12,7 @@ export const AuthGithubBtn = (props: AuthGithubBtnProps) => {
   return (
     <button
       className={clsx(
-        'relative w-48 h-12 mt-[10%] border-2 border-gray-500 rounded-full overflow-hidden bg-white/30'
+        'relative w-48 h-12 mt-[40%] border-2 border-gray-500 rounded-full overflow-hidden bg-white/30'
       )}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
@@ -26,9 +26,9 @@ export const AuthGithubBtn = (props: AuthGithubBtnProps) => {
       />
       <span
         className={clsx(
-          'absolute right-2 top-0 px-2 h-full font-bold text-xl py-[10px]',
+          'absolute top-0 px-2 h-full font-bold text-xl py-[10px]',
           'transition-all ease-in duration-500',
-          `${isHover ? 'translate-x-36' : ''}`
+          `${isHover ? '-right-40' : 'right-2'}`
         )}
       >
         Track Issue
